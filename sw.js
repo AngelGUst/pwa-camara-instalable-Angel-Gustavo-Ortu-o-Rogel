@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pwa-camara-v4';
+const CACHE_NAME = 'pwa-camara-v5';
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
