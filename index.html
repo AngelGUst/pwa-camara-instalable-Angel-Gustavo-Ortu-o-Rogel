@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pwa-camara-instalable</title>
+    <title>Inspección Visual PWA</title>
     <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="icons" href="./icons/icon-192.png">
+    <link rel="icon" href="./icons/icon-192.png">
+    <meta name="theme-color" content="#0f172a">
 </head>
 
 <body>
     <h1>Angel Gustavo Ortuño Rogel</h1>
+
     <header class="app-header">
-        <h1>Inspeccion Visual</h1>
+        <h1>Inspección Visual</h1>
         <button id="btn-instalar" class="btn btn-accent" hidden>Instalar app</button>
     </header>
 
@@ -23,29 +25,27 @@
         <section id="aviso-permiso" class="consent-card" hidden>
             <h2>Aviso de Privacidad</h2>
             <p>
-                Se requiere acceso a tu camara
-                <strong>No se guardan imagenes</strong>
+                Se requiere acceso a tu cámara.
+                <strong>No se guardan imágenes.</strong>
             </p>
             <div class="consent-actions">
                 <button id="btn-confirmar-permiso" class="btn btn-primary">Aceptar</button>
                 <button id="btn-cancelar-permiso" class="btn btn-secondary">Cancelar</button>
             </div>
+        </section>
 
-            <div class="video-wrapper">
-                <video id="visor-camara" autoplay playsinline muted></video>
-            </div>
+        <div class="video-wrapper">
+            <video id="visor-camara" autoplay playsinline muted></video>
+        </div>
 
-            <div class="controls">
-                <button id="btn-preparar-camara" class="btn btn-primary">Solicitar Acceso a Cámara</button>
-                <button id="btn-alternar-camara" class="btn btn-secondary" disabled>Cambiar Cámara
-                    (Frontal/Trasera)</button>
-                <button id="btn-apagar-camara" class="btn btn-danger" disabled>Apagar Cámara</button>
-            </div>
+        <div class="controls">
+            <button id="btn-preparar-camara" class="btn btn-primary">Solicitar Acceso a Cámara</button>
+            <button id="btn-alternar-camara" class="btn btn-secondary" disabled>Cambiar Cámara (Frontal/Trasera)</button>
+            <button id="btn-apagar-camara" class="btn btn-danger" disabled>Apagar Cámara</button>
+        </div>
     </main>
 
-    </section>
-    </main>
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
 </body>
 
 </html>
